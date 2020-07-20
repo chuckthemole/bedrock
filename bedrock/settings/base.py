@@ -1529,3 +1529,6 @@ if config('SWITCH_TRACKING_PIXEL', default=str(DEV), parser=bool):
 
 # Issue 7508 - Convert.com experiment sandbox
 CONVERT_PROJECT_ID = ('10039-1003350' if DEV else '10039-1003343')
+
+# Issue 8444 - Sentry Client side SDK
+SENTRY_DATA_SOURCE_NAME = config('SENTRY_DATA_SOURCE_NAME', default='')
